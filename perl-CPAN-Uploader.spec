@@ -11,12 +11,19 @@ Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/CPAN/%{upstream_name}-%{upstream_version}.tar.gz
 
-
+BuildRequires: perl(Getopt::Long::Descriptive)
+BuildRequires: perl(HTTP::Request::Common)
+BuildRequires: perl(HTTP::Status)
+BuildRequires: perl(LWP::UserAgent)
+BuildRequires: perl(URI)
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
-no description found
+This code is mostly derived from cpan-upload-http by Brad Fitzpatrick,
+which in turn was based on cpan-upload by Neil Bowers. I (rjbs) didn't
+want to have to use a system call to run either of those, so I
+refactored the code into this module.
 
 %prep
 %setup -q -n %{upstream_name}-%{upstream_version}
