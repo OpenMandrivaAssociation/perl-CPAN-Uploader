@@ -1,5 +1,5 @@
 %define upstream_name    CPAN-Uploader
-%define upstream_version 0.093330
+%define upstream_version 0.093390
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -16,6 +16,7 @@ BuildRequires: perl(HTTP::Request::Common)
 BuildRequires: perl(HTTP::Status)
 BuildRequires: perl(LWP::UserAgent)
 BuildRequires: perl(URI)
+
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -33,7 +34,7 @@ refactored the code into this module.
 %make
 
 %check
-make test
+%make test
 
 %install
 rm -rf %buildroot
@@ -45,7 +46,7 @@ rm -rf %buildroot
 %files
 %defattr(-,root,root)
 %doc Changes LICENSE README
+%{_mandir}/man1/*
 %{_mandir}/man3/*
 %perl_vendorlib/*
 /usr/bin/cpan-upload
-
