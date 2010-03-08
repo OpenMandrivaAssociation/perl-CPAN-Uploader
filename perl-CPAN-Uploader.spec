@@ -1,5 +1,5 @@
 %define upstream_name    CPAN-Uploader
-%define upstream_version 0.093390
+%define upstream_version 0.100660
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
