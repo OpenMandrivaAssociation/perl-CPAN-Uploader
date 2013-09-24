@@ -12,6 +12,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/CPAN/CPAN-Uploader-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(File::HomeDir)
 BuildRequires:	perl(Getopt::Long::Descriptive)
 BuildRequires:	perl(HTTP::Request::Common)
 BuildRequires:	perl(HTTP::Status)
