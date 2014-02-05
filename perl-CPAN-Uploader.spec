@@ -1,5 +1,5 @@
 %define upstream_name    CPAN-Uploader
-%define upstream_version 0.103004
+%define upstream_version 0.103006
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -94,5 +94,6 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Fri May 29 2009 cpan2dist 0.091270-1mdv
 - initial mdv release, generated with cpan2dist
+
 
 
