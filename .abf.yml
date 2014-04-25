@@ -1,5 +1,6 @@
 removed_sources:
   CPAN-Uploader-0.103000.tar.gz: ca9b7b518cb24fe6dbf3a57d4ebb88a688777ea4
   CPAN-Uploader-0.103004.tar.gz: 6876e56f50c7f9b977b70de8a9bff8ebc16e85f6
-sources:
   CPAN-Uploader-0.103006.tar.gz: 8855cfef87999cff3dbcbce60597ae9d3835f5b6
+sources:
+  CPAN-Uploader-0.103007.tar.gz: 34279c72ede8cb3d257f3d59db156281acf10d9d
